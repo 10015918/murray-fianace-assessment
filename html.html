@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body>
+
+<table></table>
+
+
+<form onsubmit="calculate(document.getElementById('volume').value, document.getElementById('pps').value);return false">
+
+    <p>Volume<br><input name="volume" id="volume"></p>
+
+    <p>Price Per Share<br><input name="pps" id="pps"></p><br>
+
+    <button type="submit">Add and calculate</button>
+
+</form>
+
+<script type="text/javascript" src="javascript.js"></script>
+</body>
+</html>
