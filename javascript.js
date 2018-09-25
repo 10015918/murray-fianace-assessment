@@ -1,8 +1,8 @@
 //variables
 var total_cost = 0;
 var total_volume = +0;
-var volume = [5000, 5500, 6300, 9000, 6000, 5000];
-var price = [0.55, 0.58, 0.60, 0.63, 0.65, 0.70];
+var volumes = [5000, 5500, 6300, 9000, 6000, 5000];
+var prices = [0.55, 0.58, 0.60, 0.63, 0.65, 0.70];
 
 // making table
 var table = document.getElementsByTagName("table")[0];
@@ -42,6 +42,5 @@ function calculate(volume, pps){
     row.innerHTML += '<td>' + profit.toFixed(4) + '</td>'; //calculating profit and putting into cell for table
 }
 
-// puts everything into table
-for(var i = 0; i < 6; i++)
-    calculate(volume[i], price [i]);
+for(var i = 0; i < volumes.length; i++)
+    calculate(volumes[i], prices[i]);
